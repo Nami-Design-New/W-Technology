@@ -872,7 +872,7 @@ main {
 
 .news {
   background-color: #fff;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .about-wrap {
@@ -1046,12 +1046,10 @@ button {
 .features {
   width: 100%;
   margin-bottom: 60px;
-  background: #ebebfa;
   background: #174a8b;
   background-repeat: no-repeat;
   background-position: 0% 20%;
   padding: 40px 0;
-  background-image: url("../img/back ground.svg");
 }
 .features p {
   text-align: center;
@@ -1979,7 +1977,6 @@ footer .copyrights ul a i {
 .blogs {
   padding: 60px 0;
   background-color: #f8f9fd;
-  margin-bottom: 40px;
 }
 .blogs h3 {
   text-align: center;
@@ -2167,4 +2164,193 @@ footer .copyrights ul a i {
 }
 .blog_details__section .blog_content .share_blog .social_share a:hover i {
   color: #fff;
+}
+
+.faqs {
+  padding: 60px 0;
+}
+.faqs h3 {
+  text-align: center;
+  color: #172541;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+.faqs .sub-title {
+  text-align: center;
+  color: #9ba4bf;
+  font-size: 14px;
+  width: min(100%, 700px);
+  margin: auto;
+  line-height: 24px;
+  margin-bottom: 48px;
+}
+.faqs .nav {
+  flex-wrap: wrap;
+  border-radius: 8px;
+  width: 100%;
+  background: #f8fafc;
+  display: flex;
+  cursor: pointer;
+  gap: 8px;
+}
+.faqs .nav .nav-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #172541 !important;
+}
+.faqs .nav .nav-link.active {
+  background-color: #172541 !important;
+  color: #fff !important;
+}
+
+.accordion-button {
+  text-align: inherit;
+}
+
+.accordion-button,
+.accordion-body {
+  padding: 16px 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: none !important;
+}
+
+.accordion-button::after {
+  margin-right: auto !important;
+  margin-left: initial;
+}
+
+.accordion-button:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  border-bottom: 1px solid #d7d7d7 !important;
+  border-radius: 0 !important;
+}
+.accordion-item p {
+  font-size: 14px;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+
+.accordion-button {
+  font-size: 14px !important;
+  font-weight: 600;
+}
+
+.about_service {
+  background-size: cover;
+  background-position: 50% 85%;
+  background-color: #f8f9fd;
+  width: 100%;
+  padding: 60px 0;
+}
+.about_service .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.about_service .content .strip2 {
+  width: 100px;
+  position: absolute;
+  top: 10px;
+  right: -30px;
+}
+.about_service .content .strip2 img {
+  max-width: 100%;
+  animation: rotator 5s linear infinite;
+}
+.about_service .content h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  color: #174a8b;
+}
+.about_service .content h3 {
+  font-size: 16px;
+  color: #172541;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.about_service .content p {
+  color: #9ba4bf;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.about_service .content a {
+  border: none;
+  background: none;
+  outline: none;
+  isolation: isolate;
+  padding: 0 16px;
+  width: 166px;
+  height: 50px;
+  border: 1px solid #4c6fff;
+  color: #4c6fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.about_service .content a::after {
+  position: absolute;
+  content: "";
+  height: 150px;
+  width: 0;
+  right: 10px;
+  transition: all 0.4s ease-in-out;
+  background: #172541;
+  transform: rotate(-25deg);
+  z-index: -1;
+}
+.about_service .content a:hover {
+  color: #fff;
+  border-color: #172541;
+}
+.about_service .content a:hover::after {
+  width: 110%;
+  right: -10px;
+}
+.about_service .video-wrapper {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3/2;
+  border-radius: 6px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.262745098), rgba(0, 0, 0, 0.2352941176)), url("../img/business.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+.about_service .video-wrapper .play-btn {
+  width: 80px;
+  height: 80px;
+  background: #174a8b;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.about_service .video-wrapper .play-btn i {
+  font-size: 28px;
+  color: #fff;
+  width: 28px;
 }/*# sourceMappingURL=styleAr.css.map */
