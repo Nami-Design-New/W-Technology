@@ -164,7 +164,9 @@ $(document).ready(function () {
     const isDarkMode = window.matchMedia(
       "(prefers-color-scheme: dark)"
     ).matches;
-    const faviconName = isDarkMode ? "assets/img/fav.svg" : "assets/img/fav2.svg";
+    const faviconName = isDarkMode
+      ? "assets/img/fav.svg"
+      : "assets/img/fav2.svg";
     favicon.href = faviconName;
   }
   setFavicon();
@@ -218,3 +220,8 @@ if (navigator.geolocation) {
     });
   });
 }
+
+$(".floatForm .formDiv").hide();
+$(".openBtn").click(function () {
+  $(".floatForm .formDiv").slideToggle();
+});

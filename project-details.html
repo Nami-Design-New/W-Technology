@@ -12,7 +12,7 @@
     <meta name="title" content="وصف الإبتكار">
     <meta property="og:type" content="website">
     <meta property="og:title" content="وصف الإبتكار لخدمات التصميم و حلول التسويق فى السعودية - خدمات التصميمات">
-    <meta property="og:url" content="https://www.ocoda.com">
+    <meta property="og:url" content="">
     <meta property="og:image" content="/storage/opengraph_image">
     <meta property="og:description"
         content="شركة وصف الإبتكار لخدمات التصميم والتسويق تقدم لك كل ما هو جديد ومُميز لتحصل على مكانة تنافسية قوية في السوق، ولمضاعفة أرباحك وعملائك بشكل خيالي">
@@ -138,7 +138,7 @@
         </section>
     </main>
     <!-- footer -->
-    <footer>
+       <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12">
@@ -221,6 +221,62 @@
                 </div>
             </div>
         </div>
+        <!-- floatForm -->
+        <div class="floatForm">
+            <div class="formDiv">
+                <img src="assets/img/fav.svg" class="logo" alt="">
+                <form action="">
+                    <!-- field-set -->
+                    <div class="inputfield">
+                        <label for="name"> اسمك كاملاً</label>
+                        <input type="text" id="name" name="name" onfocus="highlight(this)" onblur="dehighlight(this)">
+                        <span class="highlight"></span>
+                    </div>
+                    <!-- field-set -->
+                    <div class="inputfield">
+                        <label for="phone"> رقم الجوال </label>
+                        <input type="tel" id="phone" name="phone" onfocus="highlight(this)" onblur="dehighlight(this)">
+                        <span class="highlight"></span>
+                    </div>
+                    <!-- field-set -->
+                    <div class="inputfield">
+                        <label for="contactType"> نوع التواصل </label>
+                        <select name="contactType" id="contactType" onfocus="highlight(this)"
+                            onblur="dehighlight(this)">
+                            <option value="" disabled selected></option>
+                            <option value=""> اتصال </option>
+                            <option value=""> واتساب </option>
+                        </select>
+                        <span class="highlight"></span>
+                    </div>
+                    <!-- field-set -->
+                    <div class="inputfield">
+                        <label for="service"> الخدمة</label>
+                        <select name="service" id="service" onfocus="highlight(this)" onblur="dehighlight(this)">
+                            <option value="" disabled selected></option>
+                            <option value="تصميم مواقع">تصميم مواقع</option>
+                            <option value="تصميم جرافيك">تصميم جرافيك</option>
+                            <option value="خدمات التسويق">خدمات التسويق</option>
+                            <option value="إدارة صفحات السوشيال ميديا">إدارة صفحات السوشيال ميديا
+                            </option>
+                            <option value="خدمات الموشن جرافيك">خدمات الموشن جرافيك</option>
+                            <option value="خدمات السيو">خدمات السيو</option>
+                            <option value="تطوير تطبيقات الجوال">تطوير تطبيقات الجوال</option>
+                        </select>
+                        <span class="highlight"></span>
+                    </div>
+                    <button type="submit">إرسال <i class="fa-sharp fa-light fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+            <button class="btn openBtn">
+                <i class="fa-duotone fa-comments"></i>
+            </button>
+        </div>
+        <!-- Whatsapp -->
+        <a href="#!" class="floatWhatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
     </footer>
 </body>
 <script src="assets/js/main.js"></script>
