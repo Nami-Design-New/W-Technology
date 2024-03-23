@@ -123,14 +123,26 @@ var projectsSwiper = new Swiper(".projects", {
 
 let toggler = document.querySelector(".toogler");
 let menu = document.querySelector(".nav-links");
-toggler.addEventListener("click", () => {
-  menu.classList.toggle("show");
-  if (menu.classList.contains("show")) {
-    toggler.classList.add("close");
-  } else {
+
+// Function to check if the click is outside the menu
+function clickOutsideMenu(event) {
+  if (!menu.contains(event.target) && !toggler.contains(event.target)) {
+    menu.classList.remove("show");
     toggler.classList.remove("close");
   }
+}
+
+// Event listener for toggler click
+toggler.addEventListener("click", () => {
+  menu.classList.toggle("show");
+  toggler.classList.toggle("close");
 });
+
+// Event listener for clicks outside the menu
+document.body.addEventListener("click", clickOutsideMenu);
+
+
+
 //hero section slider
 let heroSwiper = new Swiper(".hero-swiper", {
   loop: true,

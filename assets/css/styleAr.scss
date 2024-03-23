@@ -168,21 +168,26 @@ $text-gradiant: linear-gradient(-272.54deg, #c0d7ee 12.86%, #0f67b6 68.06%);
         top: 80px;
         background: white;
         transition: $transation;
-        left: -100%;
-        width: 100%;
+        right: -100%;
+        width: min(100% - 16px , 300px);
         height: calc(100vh - 80px);
         &.show {
-          left: 0;
+          right: 0;
         }
         .navigations {
           flex-direction: column;
-          justify-content: center;
+          justify-content: start;
+          padding-top: 40px;
           transform: translateY(-20px);
           .nav-link {
             height: 80px !important;
+            width: 100%;
             a {
               width: min(80px, 100px);
               @include centerFlex();
+              flex: 1;
+              justify-content: space-between;
+
             }
             @media (max-width: 768px) {
               height: 50px !important;
@@ -2253,7 +2258,7 @@ footer {
 }
 .floatForm {
   position: fixed;
-  z-index: 9999;
+  z-index: 20;
   right: 20px;
   bottom: 20px;
   display: flex;
