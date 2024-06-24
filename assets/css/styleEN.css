@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   line-height: 32px;
-  direction: rtl;
+  direction: ltr;
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
@@ -59,7 +59,7 @@ a {
   z-index: 9998;
   top: 0;
   background: #fff;
-  left: 0;
+  right: 0;
   transition: all 0.4s ease-in-out;
 }
 .header.scrolled {
@@ -112,13 +112,13 @@ a {
   width: 6px;
   height: 6px;
   border: 1px solid #172541;
-  right: -16px;
+  left: -16px;
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
 }
 .header .container .nav-links .navigations .nav-link a i {
   font-size: 14px;
-  margin-right: 4px;
+  margin-left: 4px;
 }
 .header .container .nav-links .navigations .nav-link.active a {
   color: #174a8b;
@@ -150,12 +150,12 @@ a {
     top: 80px;
     background: white;
     transition: all 0.4s ease-in-out;
-    right: -100%;
+    left: -100%;
     width: min(100% - 16px, 300px);
     height: calc(100vh - 80px);
   }
   .header .container .nav-links.show {
-    right: 0;
+    left: 0;
   }
   .header .container .nav-links .navigations {
     flex-direction: column;
@@ -285,8 +285,8 @@ main {
 .hero-section .hero-swiper .heroPagination {
   position: relative;
   bottom: unset;
-  left: unset;
   right: unset;
+  left: unset;
   top: unset;
   padding: 12px;
   gap: 4px;
@@ -430,7 +430,7 @@ main {
 }
 @keyframes slideInRight {
   from {
-    transform: translateX(-100%);
+    transform: translateX(100%);
     opacity: 0;
   }
   to {
@@ -448,7 +448,7 @@ main {
   width: 120px;
   position: absolute;
   top: 189px;
-  right: -80px;
+  left: -80px;
 }
 .statics .strip img {
   max-width: 100%;
@@ -542,7 +542,7 @@ main {
   width: 100px;
   position: absolute;
   top: 100px;
-  left: -30px;
+  right: -30px;
 }
 .services .strip2 img {
   max-width: 100%;
@@ -552,7 +552,7 @@ main {
   width: 100px;
   position: absolute;
   top: 0;
-  right: -150px;
+  left: -150px;
 }
 .services .strip3 img {
   max-width: 100%;
@@ -628,7 +628,7 @@ main {
 .parralel-x .video-background {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -641,14 +641,14 @@ main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1;
 }
 .parralel-x .content {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, -50%);
   text-align: center;
   z-index: 5;
   width: 60%;
@@ -668,8 +668,8 @@ main {
   bottom: -16px;
   height: 14px;
   background-repeat: no-repeat;
-  left: -5%;
-  transform: translateX(-50%);
+  right: -5%;
+  transform: translateX(50%);
 }
 @media (max-width: 768px) {
   .parralel-x .content {
@@ -721,7 +721,7 @@ main {
 }
 .testmonials .swiper .swiper-slide .testmional-card img {
   position: absolute;
-  right: 16px;
+  left: 16px;
   top: 16px;
   width: 100px;
   height: 100px;
@@ -783,8 +783,8 @@ main {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, -50%);
   width: 3px;
   height: 3px;
   background: #172541;
@@ -895,7 +895,7 @@ main {
   font-weight: 600;
   margin-bottom: 24px;
   position: relative;
-  padding-right: 48px;
+  padding-left: 48px;
 }
 @media (max-width: 576px) {
   .about-wrap .about-text h2 {
@@ -910,7 +910,7 @@ main {
   transform: translateY(-50%);
   background: #172541;
   position: absolute;
-  right: 0;
+  left: 0;
 }
 .about-wrap .about-text p {
   line-height: 28px;
@@ -979,7 +979,7 @@ main {
   transition: all 0.4s ease-in-out;
   position: absolute;
   top: 8px;
-  left: 8px;
+  right: 8px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -1036,8 +1036,8 @@ main {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, -50%);
   width: 3px;
   height: 3px;
   background: #172541;
@@ -1120,7 +1120,7 @@ button {
   display: flex;
   padding-top: 40px;
   flex-direction: column;
-  padding-right: 32px;
+  padding-left: 32px;
   top: 160px;
 }
 .project-details aside .aside-wrap {
@@ -1159,7 +1159,7 @@ button {
 .project-details aside .techs ul li::after {
   content: "#";
   position: absolute;
-  left: -4px;
+  right: -4px;
   color: #172541;
   font-style: italic;
   font-weight: bold;
@@ -1185,7 +1185,7 @@ button {
   content: "";
   height: 150px;
   width: 0;
-  right: 10px;
+  left: 10px;
   transition: all 0.4s ease-in-out;
   background: #172541;
   transform: rotate(-25deg);
@@ -1197,7 +1197,7 @@ button {
 }
 .project-details aside .link:hover::after {
   width: 120%;
-  right: -10px;
+  left: -10px;
 }
 .project-details aside .btns {
   display: flex;
@@ -1290,7 +1290,7 @@ button {
 .projects .filter-wapper .project-item .image .layer {
   background: linear-gradient(180deg, rgba(7, 23, 78, 0) 0, rgba(7, 23, 78, 0.9607843137) 80%);
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1339,7 +1339,7 @@ button {
   content: "";
   height: 150px;
   width: 0;
-  right: 10px;
+  left: 10px;
   transition: all 0.4s ease-in-out;
   background: #172541;
   transform: rotate(-25deg);
@@ -1351,7 +1351,7 @@ button {
 }
 .projects .load-more a:hover::after {
   width: 120%;
-  right: -10px;
+  left: -10px;
 }
 
 .contact {
@@ -1407,7 +1407,7 @@ button {
   position: absolute;
   font-size: 14px;
   color: #7b88a8;
-  right: 32px;
+  left: 32px;
   transform: translateY(-50%);
   top: 50%;
   font-weight: 500;
@@ -1448,18 +1448,18 @@ button {
   content: "";
   width: 0;
   transition: all 0.4s ease-in-out;
-  left: 50%;
+  right: 50%;
   height: 2px;
   background: #172541;
   position: absolute;
-  transform: translate(-50%);
+  transform: translate(50%);
 }
 .contact form button {
   border: none;
   background: none;
   outline: none;
   align-self: flex-end;
-  margin-left: 32px;
+  margin-right: 32px;
   isolation: isolate;
   padding: 0 16px;
   width: 166px;
@@ -1479,7 +1479,7 @@ button {
   content: "";
   height: 150px;
   width: 0;
-  right: 10px;
+  left: 10px;
   transition: all 0.4s ease-in-out;
   background: #172541;
   transform: rotate(-25deg);
@@ -1491,7 +1491,7 @@ button {
 }
 .contact form button:hover::after {
   width: 110%;
-  right: -10px;
+  left: -10px;
 }
 .contact .map-info {
   margin-top: 80px;
@@ -1585,7 +1585,7 @@ button {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   opacity: 0;
   z-index: 0;
   transition: all 0.4s ease-in-out;
@@ -1636,7 +1636,7 @@ footer {
 footer .column {
   display: flex;
   flex-direction: column;
-  padding-right: 60px;
+  padding-left: 60px;
   gap: 10px;
 }
 @media (max-width: 992px) {
@@ -1786,7 +1786,7 @@ footer .copyrights ul a i {
   background: #f4f3f6;
   padding: 14px 22px;
   border-radius: 0px 4px 4px 0;
-  direction: rtl;
+  direction: ltr;
 }
 .newsletter form button {
   border: none;
@@ -1843,7 +1843,7 @@ footer .copyrights ul a i {
   background-color: white;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 99999;
   width: 100%;
   height: 100%;
@@ -1855,10 +1855,10 @@ footer .copyrights ul a i {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 50%;
   width: 96px;
   height: 96px;
-  transform: translate(-48%, -51%);
+  transform: translate(48%, -51%);
   border-radius: 100%;
   z-index: -1;
 }
@@ -1879,7 +1879,7 @@ footer .copyrights ul a i {
 .preloader .preloaderImg::after {
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 100px;
   height: 100px;
@@ -1961,7 +1961,7 @@ footer .copyrights ul a i {
   filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   border-radius: 100%;
-  right: -50px;
+  left: -50px;
   bottom: -50px;
   z-index: -1;
   animation: waves 3s ease-in-out infinite;
@@ -2021,7 +2021,7 @@ footer .copyrights ul a i {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -2040,7 +2040,7 @@ footer .copyrights ul a i {
   background-color: #174a8b;
   position: absolute;
   bottom: -25px;
-  left: 16px;
+  right: 16px;
   z-index: 9;
   display: flex;
   align-items: center;
@@ -2222,8 +2222,8 @@ footer .copyrights ul a i {
 }
 
 .accordion-button::after {
-  margin-right: auto !important;
-  margin-left: initial;
+  margin-left: auto !important;
+  margin-right: initial;
 }
 
 .accordion-button:focus {
@@ -2234,8 +2234,8 @@ footer .copyrights ul a i {
 
 .accordion-item {
   border-top: 0 !important;
-  border-right: 0 !important;
   border-left: 0 !important;
+  border-right: 0 !important;
   border-bottom: 1px solid #d7d7d7 !important;
   border-radius: 0 !important;
 }
@@ -2273,7 +2273,7 @@ footer .copyrights ul a i {
   width: 100px;
   position: absolute;
   top: 10px;
-  right: -30px;
+  left: -30px;
 }
 .about_service .content .strip2 img {
   max-width: 100%;
@@ -2319,7 +2319,7 @@ footer .copyrights ul a i {
   content: "";
   height: 150px;
   width: 0;
-  right: 10px;
+  left: 10px;
   transition: all 0.4s ease-in-out;
   background: #172541;
   transform: rotate(-25deg);
@@ -2331,7 +2331,7 @@ footer .copyrights ul a i {
 }
 .about_service .content a:hover::after {
   width: 110%;
-  right: -10px;
+  left: -10px;
 }
 .about_service .video-wrapper {
   width: 100%;
@@ -2366,7 +2366,7 @@ footer .copyrights ul a i {
 .floatWhatsapp {
   position: fixed;
   z-index: 20;
-  left: 20px;
+  right: 20px;
   bottom: 20px;
   display: inline-flex;
   justify-content: center;
@@ -2383,7 +2383,7 @@ footer .copyrights ul a i {
 .floatForm {
   position: fixed;
   z-index: 20;
-  right: 20px;
+  left: 20px;
   bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -2434,7 +2434,7 @@ footer .copyrights ul a i {
   position: absolute;
   font-size: 12px;
   color: #7b88a8;
-  right: 4px;
+  left: 4px;
   transform: translateY(-50%);
   top: 50%;
   font-weight: 500;
@@ -2476,11 +2476,11 @@ footer .copyrights ul a i {
   content: "";
   width: 0;
   transition: all 0.4s ease-in-out;
-  left: 50%;
+  right: 50%;
   height: 2px;
   background: #172541;
   position: absolute;
-  transform: translate(-50%);
+  transform: translate(50%);
 }
 .floatForm .formDiv form button {
   border: none;
@@ -2512,7 +2512,7 @@ footer .copyrights ul a i {
   content: "";
   height: 150px;
   width: 0;
-  right: 10px;
+  left: 10px;
   transition: all 0.4s ease-in-out;
   background: #172541;
   transform: rotate(-25deg);
@@ -2524,5 +2524,5 @@ footer .copyrights ul a i {
 }
 .floatForm .formDiv form button:hover::after {
   width: 110%;
-  right: -10px;
-}/*# sourceMappingURL=styleAr.css.map */
+  left: -10px;
+}/*# sourceMappingURL=styleEN.css.map */
